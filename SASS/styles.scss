@@ -10,6 +10,47 @@ body {
     margin: auto;
 }
 
+.loader {
+    display: flex;
+    position: absolute;
+    background-color: #F3F3F3;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation: loader 3s ease-out forwards;
+    z-index: 1;
+    @keyframes loader {
+        100% {
+            display: none;
+        }
+    }
+    .dot {
+        width: 40px;
+        height: 40px;
+        margin: 0px 15px;
+        border-radius: 50%;
+        animation: rebond infinite 0.5s alternate;
+        @keyframes rebond {
+            100% {
+                transform: translateY(-30px);
+            }
+        }
+    }
+    .d1 {
+        background-color: $third-color;
+    }
+    .d2 {
+        background-color: $main-color;
+        animation-delay: 300ms;
+    }
+    .d3 {
+        background-color: $secondary-color;
+        animation-delay: 600ms;
+    }
+}
+    
+
 
 .header {
     display: flex;
@@ -254,7 +295,7 @@ body {
                         margin-top: 25px;
                         cursor: pointer;
                         transition: opacity 300ms ease-in-out;
-                        &:active {
+                        &:hover {
                             opacity: 0;
                         }
                     }
@@ -396,7 +437,7 @@ footer {
     }
 
     footer {
-        height: 114px;
+        height: 64px;
         flex-direction: row-reverse;
         gap: 16px;
         padding-left: 25px;
@@ -404,15 +445,28 @@ footer {
         padding-top: 30px;
         padding-bottom: 30px;
         h3 {
+            display: flex;
+            width: 139px;
             margin-top: 50px;
+            justify-content: start;
+            align-items: center;
         }
         div {
-            width: 50%;
+            width: 661px;
             height: 20px;
             flex-direction: row;
-            margin-top: 60px;
-            gap: 7px;
-            justify-content: end;
+            margin-top: 30px;
+            gap: 16px;
+            justify-content: start;
+            align-items: center;
+            .liens {
+                display: flex;
+                flex-direction: row;
+                gap: 7px;
+                span {
+                    width: 190px;
+                }
+            }
         }
     }
 }

@@ -557,7 +557,7 @@ footer div a svg {
 }
 @media (min-width: 768px) {
   main .menu .nom h1 {
-    margin-left: 200px;
+    margin-left: 220px;
   }
   main .menu .nom .coeur-vide {
     margin-right: 25%;
@@ -598,10 +598,10 @@ footer div a svg {
     margin-left: 175px;
   }
   main .menu .nom .coeur-vide {
-    margin-right: 23%;
+    margin-right: 25%;
   }
   main .menu .nom .coeur-rempli {
-    margin-right: 23%;
+    margin-right: 25%;
   }
 }
 @media (min-width: 1440px) {
@@ -643,4 +643,4 @@ footer div a svg {
   }
 }
 
-/*# sourceMappingURL=resto.css.map */
+/*# sourceMappingURL=resto4.css.map */

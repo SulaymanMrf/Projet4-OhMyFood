@@ -3,6 +3,46 @@ body {
   margin: auto;
 }
 
+.loader {
+  display: flex;
+  position: absolute;
+  background-color: #F3F3F3;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  animation: loader 3s ease-out forwards;
+  z-index: 1;
+}
+@keyframes loader {
+  100% {
+    display: none;
+  }
+}
+.loader .dot {
+  width: 40px;
+  height: 40px;
+  margin: 0px 15px;
+  border-radius: 50%;
+  animation: rebond infinite 0.5s alternate;
+}
+@keyframes rebond {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+.loader .d1 {
+  background-color: #99E2D0;
+}
+.loader .d2 {
+  background-color: #9356DC;
+  animation-delay: 300ms;
+}
+.loader .d3 {
+  background-color: #FF79DA;
+  animation-delay: 600ms;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -248,7 +288,7 @@ body {
   cursor: pointer;
   transition: opacity 300ms ease-in-out;
 }
-.restaurants .two-card .card .text .div-svg .coeur-vide:active {
+.restaurants .two-card .card .text .div-svg .coeur-vide:hover {
   opacity: 0;
 }
 .restaurants .two-card .card .text .div-svg .coeur-rempli {
@@ -376,7 +416,7 @@ footer div a svg {
     width: 100%;
   }
   footer {
-    height: 114px;
+    height: 64px;
     flex-direction: row-reverse;
     gap: 16px;
     padding-left: 25px;
@@ -385,15 +425,28 @@ footer div a svg {
     padding-bottom: 30px;
   }
   footer h3 {
+    display: flex;
+    width: 139px;
     margin-top: 50px;
+    justify-content: start;
+    align-items: center;
   }
   footer div {
-    width: 50%;
+    width: 661px;
     height: 20px;
     flex-direction: row;
-    margin-top: 60px;
+    margin-top: 30px;
+    gap: 16px;
+    justify-content: start;
+    align-items: center;
+  }
+  footer div .liens {
+    display: flex;
+    flex-direction: row;
     gap: 7px;
-    justify-content: end;
+  }
+  footer div .liens span {
+    width: 190px;
   }
 }
 

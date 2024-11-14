@@ -557,13 +557,13 @@ footer div a svg {
 }
 @media (min-width: 768px) {
   main .menu .nom h1 {
-    margin-left: 200px;
+    margin-left: 240px;
   }
   main .menu .nom .coeur-vide {
-    margin-right: 25%;
+    margin-right: 28%;
   }
   main .menu .nom .coeur-rempli {
-    margin-right: 25%;
+    margin-right: 28%;
   }
   main .menu .entrees .box-repas .repas:hover {
     width: 622px;
@@ -595,24 +595,24 @@ footer div a svg {
 }
 @media (min-width: 1024px) {
   main .menu .nom h1 {
-    margin-left: 175px;
+    margin-left: 215px;
   }
   main .menu .nom .coeur-vide {
-    margin-right: 23%;
+    margin-right: 28%;
   }
   main .menu .nom .coeur-rempli {
-    margin-right: 23%;
+    margin-right: 28%;
   }
 }
 @media (min-width: 1440px) {
   main .menu .nom h1 {
-    margin-left: 340px;
+    margin-left: 345px;
   }
   main .menu .nom .coeur-vide {
-    margin-right: 30%;
+    margin-right: 35%;
   }
   main .menu .nom .coeur-rempli {
-    margin-right: 30%;
+    margin-right: 35%;
   }
   main .menu .entrees .box-repas .repas:hover {
     width: 845px;
@@ -643,4 +643,4 @@ footer div a svg {
   }
 }
 
-/*# sourceMappingURL=resto.css.map */
+/*# sourceMappingURL=resto3.css.map */
