@@ -1,0 +1,480 @@
+//  Variables
+$main-color: #9356DC;
+$secondary-color: #FF79DA;
+$third-color: #99E2D0;
+
+
+//  Code css
+body {
+    width: 100%;
+    margin: auto;
+}
+
+.loader {
+    display: flex;
+    position: fixed;
+    background-color: #F3F3F3;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation: loader 1.5s ease-out forwards;
+    z-index: 9999;
+    @keyframes loader {
+        100% {
+            -webkit-transform: display(none);
+        }
+    }
+    .dot {
+        width: 40px;
+        height: 40px;
+        margin: 0px 15px;
+        border-radius: 50%;
+        animation: rebond infinite 0.5s alternate;
+        @keyframes rebond {
+            100% {
+                transform: translateY(-30px);
+            }
+        }
+    }
+    .d1 {
+        background-color: $third-color;
+    }
+    .d2 {
+        background-color: $main-color;
+        animation-delay: 300ms;
+    }
+    .d3 {
+        background-color: $secondary-color;
+        animation-delay: 600ms;
+    }
+}
+    
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 113px;
+    .header__title {
+        display: flex;
+        height: 63px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 2px 4px 0px #00000026;
+        z-index: 1;
+        h1 {
+            font-family: 'Shrikhand', sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 10px;
+        }
+    }
+    .header__location {
+        display: flex;
+        background-color: rgba(234, 234, 234, 1);
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+        color:#353535;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        img {
+            width: 12px;
+            height: 16px;
+            opacity: 80%;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+        }
+      
+    }
+}
+
+
+.section-explore {
+    display: flex;
+    flex-direction: column;
+    height: 287px;
+    text-align: center;
+    background-color: #F3F3F3;
+    h2 {
+        margin-top: 39px;
+        margin-bottom: 0px;
+        margin-left: 42px;
+        width: 275px;
+        height: 68px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: black;
+    }
+    p {
+        margin-top: 0px;
+        margin-left: 34px;
+        margin-bottom: 27px;
+        width: 315px;
+        height: 46px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #353535;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-left: 82px;
+        width: 218px;
+        height: 50px;
+        background: linear-gradient($secondary-color, $main-color);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        transition: opacity 1s, box-shadow 1s;
+        &:hover {
+            opacity: 80%;
+            box-shadow: 0px 4px 15px 0px #00000059;
+        }
+    }
+}
+
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 392px;
+    padding-top: 48px;
+    gap: 10px;
+    h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: black;
+    }
+    .fonctionnement__etape {
+        display: flex;
+        flex-direction: row;
+        width: 322.49px;
+        height: 72.38px;
+        margin-top: 20px;
+        margin-left: 32.51px;
+        border-radius: 20px;
+        background-color: #F6F6F6;
+        box-shadow: 0px 4px 15px 0px #00000026;
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            color: white;
+            background-color: $main-color;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 14.18px;
+            border-radius: 25px;
+            position: relative;
+            top: 25px;
+            left: -10px;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            svg {
+                width: 16px;
+                height: 20px;
+                margin-left: 10px;
+                margin-right: 22px;
+                opacity: 50%;
+            }
+            h3 {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+    height: 1216px;
+    padding-top: 40px;
+    gap: 18px;
+    h2 {
+        font-weight: 700;
+        font-size: 24px;
+        padding-left: 20px;
+        margin-bottom: 2px;
+    }
+    .four-card {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        .two-card {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            .card {
+                display: flex;
+                flex-direction: column;
+                height: 251px;
+                width: 340px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 15px 0px #0000001A;
+                background-color: white;
+                margin-left: 18px;
+                .photo {
+                    display: flex;
+                    justify-content: end;
+                    width: 340px;
+                    height: 175px;
+                    img {
+                        width: 340px;
+                        height: 175px;
+                        border-radius: 15px 15px 0px 0px;
+                        object-fit: cover;
+                    }
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 80px;
+                        height: 29px;
+                        background-color: #99E2D0;
+                        color: #008766;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                        border-radius: 2px;
+                        position: absolute;
+                        margin-top: 13px;
+                        margin-right: 12px;
+                    }
+                }
+                .text {
+                    display: flex;
+                    flex-direction: row;
+                    height: 76px;
+                    padding-left: 13px;
+                    div {
+                        width: 50%;
+                        h3 {
+                            font-weight: 700;
+                            font-size: 18px;
+                            margin-top: 15px;
+                            margin-bottom: 0px;
+                        }
+                        p {
+                            font-weight: 300;
+                            font-size: 17px;
+                            margin-top: 5px;
+                        }
+                    }
+                    .div-svg {
+                        display: flex;
+                        justify-content: end;
+                        .coeur-vide {
+                            width: 22px;
+                            height: 21px;
+                            position: absolute;
+                            margin-right: 30px;
+                            margin-top: 25px;
+                            cursor: pointer;
+                            transition: opacity 300ms ease-in-out;
+                            &:hover {
+                                opacity: 0;
+                            }
+                        }
+                        .coeur-rempli {
+                            width: 22px;
+                            height: 21px;
+                            position: absolute;
+                            margin-right: 30px;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 142px;
+    background-color: #353535;
+    color: white;
+    padding: 22px 25px 22px 25px;
+    h3{
+        margin-top: 0px;
+        margin-bottom: 22px;
+        font-family: 'Shrikhand', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 190px;
+        height: 99px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        gap: 7px;
+        a {
+            display: flex;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+            svg {
+                width: 11px;
+                height: 13px;
+                padding-top: 2px;
+                fill: white;
+            }
+        }
+    }
+}
+
+//   MEDIA QUERIES
+
+@media (min-width:376px) {
+    .section-explore {
+        align-items: center;
+        h2 {
+            width: 100%;
+            margin-left: 0;
+        }
+        p {
+            width: 100%;
+            margin-left: 0;
+        }
+        a {
+            margin-left: 0;
+        }
+    }
+    .fonctionnement {
+        width: 100%;
+        h2 {
+            width: 315px;
+            text-align: start;
+            margin: 0px auto 0px auto;
+        }
+        .etapes {
+            margin: 0px auto 0px auto;
+        }
+    }
+    .restaurants {
+        h2 {
+            width: 340px;
+            margin: 0px auto 0px auto;
+        }
+        .four-card {
+            margin: 0px auto 0px auto;
+        }
+    }
+}
+
+@media (min-width:780px) {
+    .fonctionnement {
+        height: 180px;
+        h2 {
+            width: 80%;
+        }
+        .etapes {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            justify-content: space-between;
+            .fonctionnement__etape {
+                width: 30%;
+                margin-left: 0px;
+            }
+            }
+    }
+    
+    .restaurants {
+        height: 650px;
+        h2 {
+            width: 80%;
+            padding-left: 0px;
+        }
+        .four-card {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 0px auto 0px auto;
+            gap: 50px;
+            .two-card{
+                flex-direction: row;
+                gap: 100px;
+                .card {
+                    width: 100%;
+                    .photo {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 64px;
+        flex-direction: row-reverse;
+        gap: 16px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        h3 {
+            display: flex;
+            width: 139px;
+            margin-top: 50px;
+            justify-content: start;
+            align-items: center;
+        }
+        div {
+            width: 661px;
+            height: 20px;
+            flex-direction: row;
+            margin-top: 30px;
+            gap: 16px;
+            justify-content: start;
+            align-items: center;
+            .liens {
+                display: flex;
+                flex-direction: row;
+                gap: 7px;
+                span {
+                    width: 190px;
+                }
+            }
+        }
+    }
+}
+
+
+

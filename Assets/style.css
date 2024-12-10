@@ -1,0 +1,458 @@
+body {
+  width: 100%;
+  margin: auto;
+}
+
+.loader {
+  display: flex;
+  position: fixed;
+  background-color: #F3F3F3;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  animation: loader 1.5s ease-out forwards;
+  z-index: 9999;
+}
+@keyframes loader {
+  100% {
+    -webkit-transform: display(none);
+  }
+}
+.loader .dot {
+  width: 40px;
+  height: 40px;
+  margin: 0px 15px;
+  border-radius: 50%;
+  animation: rebond infinite 0.5s alternate;
+}
+@keyframes rebond {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+.loader .d1 {
+  background-color: #99E2D0;
+}
+.loader .d2 {
+  background-color: #9356DC;
+  animation-delay: 300ms;
+}
+.loader .d3 {
+  background-color: #FF79DA;
+  animation-delay: 600ms;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 113px;
+}
+.header .header__title {
+  display: flex;
+  height: 63px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  z-index: 1;
+}
+.header .header__title h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+.header .header__location {
+  display: flex;
+  background-color: rgb(234, 234, 234);
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  color: #353535;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.header .header__location img {
+  width: 12px;
+  height: 16px;
+  opacity: 80%;
+}
+.header .header__location p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.section-explore {
+  display: flex;
+  flex-direction: column;
+  height: 287px;
+  text-align: center;
+  background-color: #F3F3F3;
+}
+.section-explore h2 {
+  margin-top: 39px;
+  margin-bottom: 0px;
+  margin-left: 42px;
+  width: 275px;
+  height: 68px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+}
+.section-explore p {
+  margin-top: 0px;
+  margin-left: 34px;
+  margin-bottom: 27px;
+  width: 315px;
+  height: 46px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #353535;
+}
+.section-explore a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 82px;
+  width: 218px;
+  height: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  transition: opacity 1s, box-shadow 1s;
+}
+.section-explore a:hover {
+  opacity: 80%;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 392px;
+  padding-top: 48px;
+  gap: 10px;
+}
+.fonctionnement h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+}
+.fonctionnement .fonctionnement__etape {
+  display: flex;
+  flex-direction: row;
+  width: 322.49px;
+  height: 72.38px;
+  margin-top: 20px;
+  margin-left: 32.51px;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.fonctionnement .fonctionnement__etape span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  color: white;
+  background-color: #9356DC;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14.18px;
+  border-radius: 25px;
+  position: relative;
+  top: 25px;
+  left: -10px;
+}
+.fonctionnement .fonctionnement__etape div {
+  display: flex;
+  align-items: center;
+}
+.fonctionnement .fonctionnement__etape div svg {
+  width: 16px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 22px;
+  opacity: 50%;
+}
+.fonctionnement .fonctionnement__etape div h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #F3F3F3;
+  font-family: "Roboto", sans-serif;
+  height: 1216px;
+  padding-top: 40px;
+  gap: 18px;
+}
+.restaurants h2 {
+  font-weight: 700;
+  font-size: 24px;
+  padding-left: 20px;
+  margin-bottom: 2px;
+}
+.restaurants .four-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants .four-card .two-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants .four-card .two-card .card {
+  display: flex;
+  flex-direction: column;
+  height: 251px;
+  width: 340px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  background-color: white;
+  margin-left: 18px;
+}
+.restaurants .four-card .two-card .card .photo {
+  display: flex;
+  justify-content: end;
+  width: 340px;
+  height: 175px;
+}
+.restaurants .four-card .two-card .card .photo img {
+  width: 340px;
+  height: 175px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.restaurants .four-card .two-card .card .photo span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 2px;
+  position: absolute;
+  margin-top: 13px;
+  margin-right: 12px;
+}
+.restaurants .four-card .two-card .card .text {
+  display: flex;
+  flex-direction: row;
+  height: 76px;
+  padding-left: 13px;
+}
+.restaurants .four-card .two-card .card .text div {
+  width: 50%;
+}
+.restaurants .four-card .two-card .card .text div h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.restaurants .four-card .two-card .card .text div p {
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 5px;
+}
+.restaurants .four-card .two-card .card .text .div-svg {
+  display: flex;
+  justify-content: end;
+}
+.restaurants .four-card .two-card .card .text .div-svg .coeur-vide {
+  width: 22px;
+  height: 21px;
+  position: absolute;
+  margin-right: 30px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: opacity 300ms ease-in-out;
+}
+.restaurants .four-card .two-card .card .text .div-svg .coeur-vide:hover {
+  opacity: 0;
+}
+.restaurants .four-card .two-card .card .text .div-svg .coeur-rempli {
+  width: 22px;
+  height: 21px;
+  position: absolute;
+  margin-right: 30px;
+  margin-top: 25px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 142px;
+  background-color: #353535;
+  color: white;
+  padding: 22px 25px 22px 25px;
+}
+footer h3 {
+  margin-top: 0px;
+  margin-bottom: 22px;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  height: 99px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  gap: 7px;
+}
+footer div a {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+footer div a svg {
+  width: 11px;
+  height: 13px;
+  padding-top: 2px;
+  fill: white;
+}
+
+@media (min-width: 376px) {
+  .section-explore {
+    align-items: center;
+  }
+  .section-explore h2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .section-explore p {
+    width: 100%;
+    margin-left: 0;
+  }
+  .section-explore a {
+    margin-left: 0;
+  }
+  .fonctionnement {
+    width: 100%;
+  }
+  .fonctionnement h2 {
+    width: 315px;
+    text-align: start;
+    margin: 0px auto 0px auto;
+  }
+  .fonctionnement .etapes {
+    margin: 0px auto 0px auto;
+  }
+  .restaurants h2 {
+    width: 340px;
+    margin: 0px auto 0px auto;
+  }
+  .restaurants .four-card {
+    margin: 0px auto 0px auto;
+  }
+}
+@media (min-width: 780px) {
+  .fonctionnement {
+    height: 180px;
+  }
+  .fonctionnement h2 {
+    width: 80%;
+  }
+  .fonctionnement .etapes {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .fonctionnement .etapes .fonctionnement__etape {
+    width: 30%;
+    margin-left: 0px;
+  }
+  .restaurants {
+    height: 650px;
+  }
+  .restaurants h2 {
+    width: 80%;
+    padding-left: 0px;
+  }
+  .restaurants .four-card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto 0px auto;
+    gap: 50px;
+  }
+  .restaurants .four-card .two-card {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .restaurants .four-card .two-card .card {
+    width: 100%;
+  }
+  .restaurants .four-card .two-card .card .photo {
+    width: 100%;
+  }
+  .restaurants .four-card .two-card .card .photo img {
+    width: 100%;
+  }
+  footer {
+    height: 64px;
+    flex-direction: row-reverse;
+    gap: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer h3 {
+    display: flex;
+    width: 139px;
+    margin-top: 50px;
+    justify-content: start;
+    align-items: center;
+  }
+  footer div {
+    width: 661px;
+    height: 20px;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 16px;
+    justify-content: start;
+    align-items: center;
+  }
+  footer div .liens {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+  }
+  footer div .liens span {
+    width: 190px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
