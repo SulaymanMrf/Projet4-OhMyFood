@@ -18,39 +18,44 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    animation: loader 1.5s ease-out forwards;
+    animation: loader 3s ease-out forwards;
     z-index: 9999;
+  
     @keyframes loader {
-        100% {
-            -webkit-transform: display(none);
-        }
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
+  
     .dot {
-        width: 40px;
-        height: 40px;
-        margin: 0px 15px;
-        border-radius: 50%;
-        animation: rebond infinite 0.5s alternate;
-        @keyframes rebond {
-            100% {
-                transform: translateY(-30px);
-            }
+      width: 40px;
+      height: 40px;
+      margin: 0px 15px;
+      border-radius: 50%;
+      animation: rebond infinite 0.5s alternate;
+  
+      @keyframes rebond {
+        100% {
+          transform: translateY(-30px);
         }
+      }
     }
+  
     .d1 {
-        background-color: $third-color;
+      background-color: $third-color;
     }
+  
     .d2 {
-        background-color: $main-color;
-        animation-delay: 300ms;
+      background-color: $main-color;
+      animation-delay: 300ms;
     }
+  
     .d3 {
-        background-color: $secondary-color;
-        animation-delay: 600ms;
+      background-color: $secondary-color;
+      animation-delay: 600ms;
     }
-}
-    
-
+  }
 
 .header {
     display: flex;
@@ -395,7 +400,7 @@ footer {
     }
 }
 
-@media (min-width:780px) {
+@media (min-width:950px) {
     .fonctionnement {
         height: 180px;
         h2 {
